@@ -1,0 +1,40 @@
+.player {
+  display: inline-block;
+  padding: 1rem;
+  background-color: rgba(242, 225, 193);
+  text-align: center;
+}
+
+.player .turn {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: green;
+}
+
+.player .turn::before {
+  content: "(";
+}
+
+.player .turn::after {
+  content: ")";
+}
+
+.player .index {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #716F81;
+}
+
+.player .name {
+  color: #B97A95;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.player .score {
+  color: #F6AE99;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1;
+}

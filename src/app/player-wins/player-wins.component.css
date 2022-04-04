@@ -1,0 +1,32 @@
+.player-wins {
+  position: absolute;
+  z-index: 999;
+
+  width: 90vw;
+  height: 90vh;
+  top: 5vh;
+  left: 5vw;
+
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  background-image: url(/assets/confetti.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.player-wins h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #b97a95;
+  text-align: center;
+  text-transform: uppercase;
+}

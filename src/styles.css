@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #716F81;
+}
+
+.button {
+  background-color: #B97A95;
+  border-width: 1px;
+  border-color: #F6AE99;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: #F2E1C1;
+  font-weight: bold;
+}
+
+.input {
+  border-radius: 5px;
+  border: 2px solid #B97A95;
+  background-color: #F2E1C1;
+  padding: 0.4rem;
+  color: #716F81;
+  font-weight: bold;
+  outline: none;
+}

@@ -1,0 +1,14 @@
+.new-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.new-player label {
+  color: #F2E1C1;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1;
+}

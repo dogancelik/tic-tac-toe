@@ -1,0 +1,41 @@
+<div class="controls">
+  <button class="button" id="start-game" (click)="startGame()">Start Game</button>
+  <button class="button" id="reset-board" (click)="resetBoard()">Reset Board</button>
+</div>
+
+<app-new-player-input
+  class="new-player"
+  *ngIf="players.length < 2"
+  [players]="players"
+></app-new-player-input>
+
+<div class="board-container">
+  <app-player-info
+    class="player"
+    [number]="1"
+    [player]="players[0]"
+    [turn]="turn"
+  ></app-player-info>
+  <div class="board" *ngIf="started">
+    <button
+      class="tile"
+      [class]="getClass(tile)"
+      *ngFor="let tile of tiles"
+      (click)="tick(tile)"
+    >
+      {{ tile.value }}
+    </button>
+  </div>
+  <app-player-info
+    class="player"
+    [number]="2"
+    [player]="players[1]"
+    [turn]="turn"
+  ></app-player-info>
+</div>
+
+<app-player-wins
+  [winner]="winner"
+  [resetBoard]="resetBoard"
+  *ngIf="finished"
+></app-player-wins>

@@ -1,0 +1,13 @@
+<div class="new-player">
+  <label for="new-player-name">Enter {{ newPlayerIndex }} player's name:</label>
+  <input
+    class="input"
+    type="text"
+    id="new-player-name"
+    [value]="newPlayerName"
+    (input)="updatePlayerName($event)"
+  />
+  <button class="button" id="add-player" (click)="addPlayer()">
+    Add Player
+  </button>
+</div>

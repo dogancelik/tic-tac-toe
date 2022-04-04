@@ -1,0 +1,66 @@
+.board {
+  width: 65vmin;
+  height: 65vmin;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1vw;
+  z-index: 900;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* user-select: none;
+  cursor: pointer; */
+
+  border-radius: 0.25rem;
+  border: 0.25rem solid #a3949a;
+  background-color: #a3949a;
+  box-shadow: 5px 5px 5px 2px rgba(163, 148, 154, 0.35);
+
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.tile:active {
+  transform: translateY(5px);
+}
+
+.tile.x, .tile.o {
+  background-color: #F2E1C1;
+}
+
+.tile.x {
+  color: #F6AE99;
+  border-color: #F6AE99;
+  box-shadow: 5px 5px 5px 2px rgba(246, 174, 153, 0.35);
+}
+
+.tile.o {
+  color: #B97A95;
+  border-color: #B97A95;
+  box-shadow: 5px 5px 5px 2px rgba(185, 122, 149, 0.35);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.board-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player {
+  display: block;
+  flex-basis: 192px;
+}
+

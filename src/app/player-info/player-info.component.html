@@ -1,0 +1,6 @@
+<div class="player" *ngIf="player">
+  <div class="turn" *ngIf="turn % 2 == number - 1">YOUR TURN</div>
+  <div class="index">Player {{number}}</div>
+  <div class="name">Name: {{player.name}}</div>
+  <div class="score">Score: {{player.score}}</div>
+</div>
